@@ -1,0 +1,5 @@
+Error apresentado e comentado
+
+Error   : Unable to map design without a suitable flip-flop. [MAP-2] [synthesize]
+        : Instance 'uart_sender_load_t_buffer_reg' requires an async preset, async clear flip-flop.
+        : Check the libraries for necessary flop cell. If the flop cell exists in the library, query using the 'unusable_reason' attribute on the libcell to know why the tool marked it as unusable.
