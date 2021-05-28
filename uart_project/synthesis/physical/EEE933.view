@@ -1,0 +1,7 @@
+# Version:1.0 MMMC View Definition File
+# Do Not Remove Above Line
+create_library_set -name tcb018gbwp7tcc_ls -timing {/home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib}
+create_constraint_mode -name design_constraints -sdc_files {../../constraint/design.sdc}
+create_delay_corner -name tcb018gbwp7tcc_dc -library_set {tcb018gbwp7tcc_ls}
+create_analysis_view -name test_uart -constraint_mode {design_constraints} -delay_corner {tcb018gbwp7tcc_dc}
+set_analysis_view -setup {test_uart} -hold {test_uart}

@@ -1,0 +1,1032 @@
+Cadence Genus(TM) Synthesis Solution.
+Copyright 2017 Cadence Design Systems, Inc. All rights reserved worldwide.
+Cadence and the Cadence logo are registered trademarks and Genus is a trademark
+of Cadence Design Systems, Inc. in the United States and other countries.
+
+Version: 17.20-p003_1, built Wed Nov 29 2017
+Options: -files comandos_genus.txt 
+Date:    Wed Sep 23 02:12:13 2020
+Host:    optmaS1 (x86_64 w/Linux 3.10.0-1127.13.1.el7.x86_64) (4cores*8cpus*1physical cpu*Intel(R) Core(TM) i7-7700 CPU @ 3.60GHz 8192KB) (16151352KB)
+OS:      CentOS Linux release 7.8.2003 (Core)
+
+Checking out license: Genus_Synthesis
+
+Loading tool scripts...
+
+Finished loading tool scripts (50 seconds elapsed).
+
+#@ Processing -files option
+@genus 1> source comandos_genus.txt
+#@ Begin verbose source comandos_genus.txt
+@file(comandos_genus.txt) 8: include load.tcl
+Sourcing './load.tcl' (Wed Sep 23 02:13:03 -03 2020)...
+#@ Begin verbose source load.tcl
+@file(load.tcl) 11: set_db script_search_path ./ 
+  Setting attribute of root '/': 'script_search_path' = ./
+@file(load.tcl) 12: set_db init_hdl_search_path ../
+  Setting attribute of root '/': 'init_hdl_search_path' = ../
+@file(load.tcl) 13: set_db information_level 9 
+  Setting attribute of root '/': 'information_level' = 9
+@file(load.tcl) 18: set DK_PATH  "/home/tools/TSMC180/TSMCHOME/digital" 
+@file(load.tcl) 20: set_db library "${DK_PATH}/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib"
+
+Threads Configured:3
+Info    : An unsupported construct was detected in this library. [LBR-40]
+        : Unknown Liberty attribute 'library_features' encountered. Ignoring (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib, Line 67)
+        : Check to see if this construct is really needed for synthesis. Many liberty constructs are not actually required.
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D2BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D1BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D4BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2XD1BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D0BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN2D0BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D2BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D4BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3XD1BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN3D1BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D1BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D0BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D2BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4XD1BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AN4D4BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D0BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D1BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO211D2BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO21D0BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Could not find an attribute in the library. [LBR-436]
+        : Attribute 'max_fanout' on 'output/inout' pin 'Z' of cell 'AO21D1BWP7T' is not defined in the library. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib)
+Info    : Missing a function attribute in the output pin definition. [LBR-518]
+        : Functionality is missing at pin 'Z' for the cell 'BHDBWP7T'. (File /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib, Line 131784)
+
+  Message Summary for Library tcb018gbwp7ttc.lib:
+  ***********************************************
+  Could not find an attribute in the library. [LBR-436]: 633
+  Missing a function attribute in the output pin definition. [LBR-518]: 1
+  An unsupported construct was detected in this library. [LBR-40]: 1
+  ***********************************************
+ 
+Info    : Created nominal operating condition. [LBR-412]
+        : Operating condition '_nominal_' was created for the PVT values (1.000000, 1.800000, 25.000000) in library 'tcb018gbwp7ttc.lib'.
+        : The nominal operating condition represents either the nominal PVT values if specified in the library source, or the default PVT values (1.0, 1.0, 1.0).
+        Cell 'ANTENNABWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNABWP7T' must have an output pin.
+        : Add the missing output pin(s), then reload the library. Otherwise, the library cell will be marked as unusable and as timing model.
+        Cell 'ANTENNABWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'ANTENNABWP7T' must have an output pin.
+Info    : An output library pin lacks a function attribute. [LBR-41]
+        : Output pin 'BHDBWP7T/Z' has no function.
+        : If the remainder of this library cell's semantic checks are successful, it will be considered as a timing-model (because one of its outputs does not have a valid function.
+        Cell 'DCAP16BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16BWP7T' must have an output pin.
+        Cell 'DCAP16BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP16BWP7T' must have an output pin.
+        Cell 'DCAP32BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32BWP7T' must have an output pin.
+        Cell 'DCAP32BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP32BWP7T' must have an output pin.
+        Cell 'DCAP4BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4BWP7T' must have an output pin.
+        Cell 'DCAP4BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP4BWP7T' must have an output pin.
+        Cell 'DCAP64BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64BWP7T' must have an output pin.
+        Cell 'DCAP64BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP64BWP7T' must have an output pin.
+        Cell 'DCAP8BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8BWP7T' must have an output pin.
+        Cell 'DCAP8BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAP8BWP7T' must have an output pin.
+        Cell 'DCAPBWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAPBWP7T' must have an output pin.
+        Cell 'DCAPBWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'DCAPBWP7T' must have an output pin.
+        Cell 'GDCAP10BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10BWP7T' must have an output pin.
+        Cell 'GDCAP10BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP10BWP7T' must have an output pin.
+        Cell 'GDCAP2BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2BWP7T' must have an output pin.
+        Cell 'GDCAP2BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP2BWP7T' must have an output pin.
+        Cell 'GDCAP3BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP3BWP7T' must have an output pin.
+        Cell 'GDCAP3BWP7T' has no outputs.
+Warning : Library cell has no output pins defined. [LBR-9]
+        : Library cell 'GDCAP3BWP7T' must have an output pin.
+        Cell 'GDCAP4BWP7T' has no outputs.
+        Cell 'GDCAP4BWP7T' has no outputs.
+        Cell 'GDCAPBWP7T' has no outputs.
+        Cell 'GDCAPBWP7T' has no outputs.
+        Cell 'GFILL10BWP7T' has no outputs.
+        Cell 'GFILL10BWP7T' has no outputs.
+        Cell 'GFILL2BWP7T' has no outputs.
+        Cell 'GFILL2BWP7T' has no outputs.
+        Cell 'GFILL3BWP7T' has no outputs.
+        Cell 'GFILL3BWP7T' has no outputs.
+        Cell 'GFILL4BWP7T' has no outputs.
+        Cell 'GFILL4BWP7T' has no outputs.
+        Cell 'GFILLBWP7T' has no outputs.
+        Cell 'GFILLBWP7T' has no outputs.
+  Setting attribute of root '/': 'library' = /home/tools/TSMC180/TSMCHOME/digital/Front_End/timing_power_noise/NLDM/tcb018gbwp7t_270a/tcb018gbwp7ttc.lib
+@file(load.tcl) 22: set_db lef_library "${DK_PATH}/Back_End/lef/tcb018gbwp7t_270a/lef/tcb018gbwp7t_6lm.lef"
+
+  According to lef_library, there are total 6 routing layers [ V(3) / H(3) ]
+
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S' and 'Z' in libcell 'CKMUX2D0BWP7T'.
+        : Setting the 'timing_sense' to non_unate.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S' and 'Z' in libcell 'CKMUX2D1BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'S' and 'Z' in libcell 'CKMUX2D2BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'Z' in libcell 'CKXOR2D0BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'Z' in libcell 'CKXOR2D0BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'Z' in libcell 'CKXOR2D1BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'Z' in libcell 'CKXOR2D1BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'Z' in libcell 'CKXOR2D2BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'Z' in libcell 'CKXOR2D2BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A2' and 'Z' in libcell 'CKXOR2D4BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A1' and 'Z' in libcell 'CKXOR2D4BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'FA1D0BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'FA1D0BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'FA1D0BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'FA1D1BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'FA1D1BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'FA1D1BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'CI' and 'S' in libcell 'FA1D2BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'B' and 'S' in libcell 'FA1D2BWP7T'.
+Info    : Both 'pos_unate' and 'neg_unate' timing_sense arcs have been processed. [LBR-162]
+        : Non_unate 'timing_sense' inferred between pin 'A' and 'S' in libcell 'FA1D2BWP7T'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'Q' in libcell 'LHCND1BWP7T' is 'pos_unate', but unateness determined from function is 'non_unate'.
+        : The 'timing_sense' attribute will be respected.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'QN' in libcell 'LHCND1BWP7T' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'Q' in libcell 'LHCND2BWP7T' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'QN' in libcell 'LHCND2BWP7T' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'Q' in libcell 'LHCNQD1BWP7T' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'Q' in libcell 'LHCNQD2BWP7T' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'SDN' and 'Q' in libcell 'LHSND1BWP7T' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'SDN' and 'QN' in libcell 'LHSND1BWP7T' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'SDN' and 'Q' in libcell 'LHSND2BWP7T' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'SDN' and 'QN' in libcell 'LHSND2BWP7T' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Setting the maximum print count of this message to 10 if information_level is less than 9. [LBR-161]
+        : To print all the warning messages, set the information_level to 9.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'SDN' and 'Q' in libcell 'LHSNQD1BWP7T' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'SDN' and 'Q' in libcell 'LHSNQD2BWP7T' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'Q' in libcell 'LNCND1BWP7T' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'QN' in libcell 'LNCND1BWP7T' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'Q' in libcell 'LNCND2BWP7T' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'QN' in libcell 'LNCND2BWP7T' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'Q' in libcell 'LNCNQD1BWP7T' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'CDN' and 'Q' in libcell 'LNCNQD2BWP7T' is 'pos_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'SDN' and 'Q' in libcell 'LNSND1BWP7T' is 'neg_unate', but unateness determined from function is 'non_unate'.
+Info    : Mismatch in unateness between 'timing_sense' attribute and the function. [LBR-155]
+        : 'timing_sense' attribute between pin 'SDN' and 'QN' in libcell 'LNSND1BWP7T' is 'pos_unate', but unateness determined from function is 'non_unate'.
+  Library has 344 usable logic and 147 usable sequential lib-cells.
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'tcb018gbwp7ttc.lib', Total cells: 560, Unusable cells: 57.
+	List of unusable cells: 'ANTENNABWP7T BHDBWP7T DCAP16BWP7T DCAP32BWP7T DCAP4BWP7T DCAP64BWP7T DCAP8BWP7T DCAPBWP7T GAN2D1BWP7T GAN2D2BWP7T GAOI21D1BWP7T GAOI21D2BWP7T GAOI22D1BWP7T GBUFFD1BWP7T GBUFFD2BWP7T GBUFFD3BWP7T GBUFFD8BWP7T GDCAP10BWP7T GDCAP2BWP7T GDCAP3BWP7T GDCAP4BWP7T GDCAPBWP7T GDFCNQD1BWP7T GDFQD1BWP7T GFILL10BWP7T GFILL2BWP7T GFILL3BWP7T GFILL4BWP7T GFILLBWP7T GINVD1BWP7T GINVD2BWP7T GINVD3BWP7T GINVD8BWP7T GMUX2D1BWP7T GMUX2D2BWP7T GMUX2ND1BWP7T GMUX2ND2BWP7T GND2D1BWP7T GND2D2BWP7T GND2D3BWP7T GND3D1BWP7T GND3D2BWP7T GNR2D1BWP7T GNR2D2BWP7T GNR3D1BWP7T GNR3D2BWP7T GOAI21D1BWP7T GOAI21D2BWP7T GOR2D1BWP7T GOR2D2BWP7T GSDFCNQD1BWP7T GTIEHBWP7T GTIELBWP7T GXNR2D1BWP7T GXNR2D2BWP7T GXOR2D1BWP7T GXOR2D2BWP7T .'
+        : For more information, refer to 'Cells Identified as Unusable' in the 'User Guide'. The reason why a cell is considered unusable is stored in the 'unusable_reason' libcell attribute.
+  Setting attribute of root '/': 'lef_library' = /home/tools/TSMC180/TSMCHOME/digital/Back_End/lef/tcb018gbwp7t_270a/lef/tcb018gbwp7t_6lm.lef
+@file(load.tcl) 25: set_db cap_table_file  "${DK_PATH}/Back_End/lef/tcb018gbwp7t_270a/techfiles/captable/t018lo_1p6m_typical.captable"
+
+  According to cap_table_file, there are total 6 routing layers [ V(3) / H(3) ]
+
+  Setting attribute of root '/': 'cap_table_file' = /home/tools/TSMC180/TSMCHOME/digital/Back_End/lef/tcb018gbwp7t_270a/techfiles/captable/t018lo_1p6m_typical.captable
+#@ End verbose source load.tcl
+@file(comandos_genus.txt) 9: set_db lbr_seq_in_out_phase_opto true
+  Setting attribute of root '/': 'lbr_seq_in_out_phase_opto' = true
+@file(comandos_genus.txt) 10: set_db exact_match_seq_async_ctrls false
+  Setting attribute of root '/': 'exact_match_seq_async_ctrls' = false
+@file(comandos_genus.txt) 11: read_hdl -sv uart.v
+            Reading Verilog file '../uart.v'
+@file(comandos_genus.txt) 12: elaborate uart
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'tcb018gbwp7ttc.lib', Total cells: 560, Unusable cells: 57.
+	List of unusable cells: 'ANTENNABWP7T BHDBWP7T DCAP16BWP7T DCAP32BWP7T DCAP4BWP7T DCAP64BWP7T DCAP8BWP7T DCAPBWP7T GAN2D1BWP7T GAN2D2BWP7T GAOI21D1BWP7T GAOI21D2BWP7T GAOI22D1BWP7T GBUFFD1BWP7T GBUFFD2BWP7T GBUFFD3BWP7T GBUFFD8BWP7T GDCAP10BWP7T GDCAP2BWP7T GDCAP3BWP7T GDCAP4BWP7T GDCAPBWP7T GDFCNQD1BWP7T GDFQD1BWP7T GFILL10BWP7T GFILL2BWP7T GFILL3BWP7T GFILL4BWP7T GFILLBWP7T GINVD1BWP7T GINVD2BWP7T GINVD3BWP7T GINVD8BWP7T GMUX2D1BWP7T GMUX2D2BWP7T GMUX2ND1BWP7T GMUX2ND2BWP7T GND2D1BWP7T GND2D2BWP7T GND2D3BWP7T GND3D1BWP7T GND3D2BWP7T GNR2D1BWP7T GNR2D2BWP7T GNR3D1BWP7T GNR3D2BWP7T GOAI21D1BWP7T GOAI21D2BWP7T GOR2D1BWP7T GOR2D2BWP7T GSDFCNQD1BWP7T GTIEHBWP7T GTIELBWP7T GXNR2D1BWP7T GXNR2D2BWP7T GXOR2D1BWP7T GXOR2D2BWP7T .'
+Info    : Found unusable library cells. [LBR-415]
+        : Library: 'physical_cells', Total cells: 8, Unusable cells: 8.
+	List of unusable cells: 'FILL16BWP7T FILL1BWP7T FILL2BWP7T FILL32BWP7T FILL4BWP7T FILL64BWP7T FILL8BWP7T TAPCELLBWP7T .'
+Info    : Elaborating Design. [ELAB-1]
+        : Elaborating top-level block 'uart' from file '../uart.v'.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'uart_rx' from file '../uart.v'.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'rxd_old' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 185.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'rxd_new' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 186.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sampling' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 196.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sampling' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 201.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sampling' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 204.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'clk1x' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 212.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'clk1x' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 216.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'clk1x' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 218.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'clk1x' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 220.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'r_ready' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 237.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'parity_error' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 238.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'frame_error' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 239.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'r_buffer' [11] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 240.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'r_data' [8] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 241.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'r_ready' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 244.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'parity_error' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 245.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'frame_error' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 246.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'r_ready' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 250.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'parity_error' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 252.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'frame_error' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 255.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=4 B=4 Z=1) at line 203 in the file '../uart.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=4 B=4 Z=1) at line 203 in the file '../uart.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=4 B=4 Z=4) at line 200 in the file '../uart.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=4 B=4 Z=4) at line 200 in the file '../uart.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=4 B=4 Z=1) at line 217 in the file '../uart.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=4 B=4 Z=1) at line 217 in the file '../uart.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=4 B=1 Z=4) at line 217 in the file '../uart.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=4 B=1 Z=4) at line 217 in the file '../uart.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=4 B=4 Z=1) at line 215 in the file '../uart.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=4 B=4 Z=1) at line 215 in the file '../uart.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=4 B=1 Z=4) at line 229 in the file '../uart.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=4 B=1 Z=4) at line 229 in the file '../uart.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : Latch inferred.  [CDFG2G-616]
+        : Latch inferred for variable 'r_buffer' in file '../uart.v' on line 235, column 11.
+        : Use 'set_attribute hdl_error_on_latch true' to issue an error when a latch is inferred. Use 'set_attribute hdl_latch_keep_feedback true' to infer combinational logic rather than a latch when a variable is explicitly assigned to itself.
+Info    : Elaborating Subdesign. [ELAB-2]
+        : Elaborating block 'uart_tx' from file '../uart.v'.
+Warning : Signal referenced before it is assigned. This may cause simulation mismatches between the original and synthesized designs. [CDFG-381]
+        : Signal 'wrn_buf' in module 'uart_tx' in file '../uart.v' on line 289.
+Warning : Signal referenced before it is assigned. This may cause simulation mismatches between the original and synthesized designs. [CDFG-381]
+        : Signal 'clrn_buf' in module 'uart_tx' in file '../uart.v' on line 296.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sending' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 303.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 't_empty' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 304.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'load_t_buffer' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 305.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 't_data' [8] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 306.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 't_buffer' [8] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 307.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 't_empty' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 313.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'load_t_buffer' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 314.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sending' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 319.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 't_empty' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 321.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'load_t_buffer' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 322.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'sending' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 326.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'txd' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 339.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'txd' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 342.
+Info    : Bitwidth mismatch in assignment. [CDFG-372]
+        : Width of left hand side 'txd' [1] doesn't match the width of right hand side [32] in assignment in file '../uart.v' on line 352.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/equal_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=4 B=4 Z=1) at line 325 in the file '../uart.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'EQ_UNS_OP' (pin widths: A=4 B=4 Z=1) at line 325 in the file '../uart.v' will be considered in the following order: {'hdl_implementation:GB/equal_unsigned/very_fast' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=4 B=1 Z=4) at line 354 in the file '../uart.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=4 B=1 Z=4) at line 354 in the file '../uart.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Info    : Latch inferred.  [CDFG2G-616]
+        : Latch inferred for variable 'wrn_buf' in file '../uart.v' on line 283, column 13.
+Info    : Latch inferred.  [CDFG2G-616]
+        : Latch inferred for variable 'clrn_buf' in file '../uart.v' on line 283, column 23.
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/add_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=4 B=1 Z=4) at line 149 in the file '../uart.v'.
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'ADD_UNS_OP' (pin widths: A=4 B=1 Z=4) at line 149 in the file '../uart.v' will be considered in the following order: {'hdl_implementation:GB/add_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/add_unsigned/medium' (priority 1), 'hdl_implementation:GB/add_unsigned/slow' (priority 1)}
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'r_buffer[0]' in module 'uart_rx'.
+        : This may cause simulation mismatches between the original and synthesized designs.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'r_buffer[1]' in module 'uart_rx'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'r_buffer[2]' in module 'uart_rx'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'r_buffer[3]' in module 'uart_rx'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'r_buffer[4]' in module 'uart_rx'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'r_buffer[5]' in module 'uart_rx'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'r_buffer[6]' in module 'uart_rx'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'r_buffer[7]' in module 'uart_rx'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'r_buffer[8]' in module 'uart_rx'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'r_buffer[9]' in module 'uart_rx'.
+Warning : Signal or variable has multiple drivers. [CDFG2G-622]
+        : 'r_buffer[10]' in module 'uart_rx'.
+Info    : Done Elaborating Design. [ELAB-3]
+        : Done elaborating 'uart'.
+Checking for analog nets...
+Check completed for analog nets.
+Checking for source RTL...
+Check completed for source RTL.
+        Computing net loads.
+UM:  flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:            13             61                                      elaborate
+@file(comandos_genus.txt) 15: read_sdc ../constraint/design.sdc
+            Reading file '/home/EEE933/aln2/uart_project/synthesis_2/../constraint/design.sdc'
+Statistics for commands executed by read_sdc:
+ "all_inputs"               - successful      5 , failed      0 (runtime  0.00)
+ "all_outputs"              - successful      2 , failed      0 (runtime  0.00)
+ "create_clock"             - successful      1 , failed      0 (runtime  0.00)
+ "get_ports"                - successful      2 , failed      0 (runtime  0.00)
+ "set_false_path"           - successful      1 , failed      0 (runtime  0.00)
+ "set_input_delay"          - successful      1 , failed      0 (runtime  0.00)
+ "set_input_transition"     - successful      4 , failed      0 (runtime  0.00)
+ "set_load"                 - successful      2 , failed      0 (runtime  0.00)
+ "set_load_unit"            - successful      1 , failed      0 (runtime  0.00)
+Total runtime 0
+@file(comandos_genus.txt) 18: synthesize -to_generic -eff high
+Warning : This command will be obsolete in a next major release. [TUI-37]
+        : command: 'synthesize'
+        : The synthesize command is obsolete. Use the syn_gen, syn_map or syn_opt commands instead.
+Info    : Deleting instances not driving any primary outputs. [GLO-34]
+        : Deleting 25 hierarchical instances. 
+Following instances are deleted as they do not drive any primary output:
+'mux_cnt16x_146_7', 'recver/mux_clk1x_211_7', 
+'recver/mux_frame_error_236_7', 'recver/mux_frame_error_243_8', 
+'recver/mux_no_bits_rcvd_226_7', 'recver/mux_parity_error_236_7', 
+'recver/mux_parity_error_243_8', 'recver/mux_r_data_236_7', 
+'recver/mux_r_ready_236_7', 'recver/mux_r_ready_243_8', 
+'recver/mux_rxd_new_184_7', 'recver/mux_rxd_old_184_7', 
+'recver/mux_sampling_195_7', 'recver/mux_sampling_198_16', 
+'sender/mux_clrn_buf_clean_302_7', 'sender/mux_load_t_buffer_302_7', 
+'sender/mux_load_t_buffer_311_8', 'sender/mux_no_bits_sent_337_7', 
+'sender/mux_sending_302_7', 'sender/mux_t_buffer_302_7', 
+'sender/mux_t_data_302_7', 'sender/mux_t_empty_302_7', 
+'sender/mux_t_empty_311_8', 'sender/mux_txd_337_7', 
+'sender/mux_wrn_buf_clean_302_7'.
+        : Optimizations such as constant propagation or redundancy removal could change the connections so a hierarchical instance does not drive any primary outputs anymore. To see the list of deleted hierarchical instances, set the 'information_level' attribute to 2 or above. If the message is truncated set the message attribute 'truncate' to false to see the complete list. To prevent this optimization, set the 'delete_unloaded_insts' root/subdesign attribute to 'false' or 'preserve' instance attribute to 'true'.
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Thermal factor      : 1.00
+Via Resistance      : 6.40 ohm (from cap_table_file)
+Site size           : 4.48 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       cap_table_file
+------------------------------------------------
+M1              H         0.00        0.000272  
+M2              V         1.00        0.000241  
+M3              H         1.00        0.000241  
+M4              V         1.00        0.000241  
+M5              H         1.00        0.000239  
+M6              V         1.00        0.000280  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       cap_table_file
+-------------------------------------------------
+M1              H         0.00         0.339130  
+M2              V         1.00         0.278571  
+M3              H         1.00         0.278571  
+M4              V         1.00         0.278571  
+M5              H         1.00         0.278571  
+M6              V         1.00         0.081818  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+METAL1          H         0.00         0.230000  
+METAL2          V         1.00         0.280000  
+METAL3          H         1.00         0.280000  
+METAL4          V         1.00         0.280000  
+METAL5          H         1.00         0.280000  
+METAL6          V         1.00         0.440000  
+
+Info    : Synthesizing. [SYNTH-1]
+        : Synthesizing 'uart' to generic gates using 'high' effort.
+Info    : Pre-processed datapath logic. [DPOPT-6]
+        : No pre-processing optimizations applied to datapath logic in 'uart'.
+Info    : Optimizing datapath logic. [DPOPT-1]
+        : Optimizing datapath logic in 'uart'.
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_62'
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+      Timing increment_unsigned_1...
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_62'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region'
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_60'
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_60'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_59'
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : An implementation was inferred. [CWD-19]
+        : The implementation 'hdl_implementation:GB/increment_unsigned/very_fast' was inferred through the binding 'b1' for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4).
+Info    : Sorted the set of valid implementations for synthetic operator. [CWD-36]
+        : The implementations for the call to synthetic operator 'INCREMENT_UNS_CI_OP' (pin widths: A=4 CI=1 Z=4) will be considered in the following order: {'hdl_implementation:GB/increment_unsigned/very_fast' (priority 1), 'hdl_implementation:GB/increment_unsigned/medium' (priority 1), 'hdl_implementation:GB/increment_unsigned/slow' (priority 1)}
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_59'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Implementing datapath configurations. [DPOPT-3]
+        : Implementing datapath configurations for 'CDN_DP_region_61'
+Info    : Done implementing datapath configurations. [DPOPT-4]
+        : Selected 'very_fast' configuration 4 for module 'CDN_DP_region_61'.
+          Optimizations applied to 'very_fast' configuration:
+            rewriting(0), factoring(0), sharing(0), cmultcse(0), downsizing(0), speculation(0)
+Info    : Done optimizing datapath logic. [DPOPT-2]
+        : Done optimizing datapath logic in 'uart'.
+      Removing temporary intermediate hierarchies under uart
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'recver/r_buffer_reg[0]99'.
+        : This optimization was enabled by the root attribute 'optimize_constant_latches'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'recver/r_buffer_reg[1]100'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'recver/r_buffer_reg[2]101'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'recver/r_buffer_reg[3]102'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'recver/r_buffer_reg[4]103'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'recver/r_buffer_reg[5]104'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'recver/r_buffer_reg[6]105'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'recver/r_buffer_reg[7]106'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'recver/r_buffer_reg[8]107'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'recver/r_buffer_reg[9]108'.
+Info    : Replacing a latch with a logic constant 0. [GLO-14]
+        : The instance is 'recver/r_buffer_reg[10]109'.
+              Optimizing muxes in design 'uart_rx'.
+              Optimizing muxes in design 'uart_tx'.
+Info    : Done synthesizing. [SYNTH-2]
+        : Done synthesizing 'uart' to generic gates.
+        Computing net loads.
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:             1              2                                      syn_generic
+@file(comandos_genus.txt) 21: synthesize -to_mapped -eff high -no_incr
+Warning : This command will be obsolete in a next major release. [TUI-37]
+        : command: 'synthesize'
+Current PLE settings:
+
+Aspect ratio        : 1.00
+Shrink factor       : 1.00
+Scale of res/length : 1.00
+Scale of cap/length : 1.00
+Net derating factor : 1.00
+Thermal factor      : 1.00
+Via Resistance      : 6.40 ohm (from cap_table_file)
+Site size           : 4.48 um (from lef [tech+cell])
+
+                                   Capacitance  
+  Layer                             / Length         Data source:
+Name        Direction Utilization  (pF/micron)       cap_table_file
+------------------------------------------------
+M1              H         0.00        0.000272  
+M2              V         1.00        0.000241  
+M3              H         1.00        0.000241  
+M4              V         1.00        0.000241  
+M5              H         1.00        0.000239  
+M6              V         1.00        0.000280  
+
+                                    Resistance   
+  Layer                              / Length         Data source:
+Name        Direction Utilization  (ohm/micron)       cap_table_file
+-------------------------------------------------
+M1              H         0.00         0.339130  
+M2              V         1.00         0.278571  
+M3              H         1.00         0.278571  
+M4              V         1.00         0.278571  
+M5              H         1.00         0.278571  
+M6              V         1.00         0.081818  
+
+                                        Area     
+  Layer                               / Length        Data source:
+Name        Direction Utilization     (micron)        lef_library
+-------------------------------------------------
+METAL1          H         0.00         0.230000  
+METAL2          V         1.00         0.280000  
+METAL3          H         1.00         0.280000  
+METAL4          V         1.00         0.280000  
+METAL5          H         1.00         0.280000  
+METAL6          V         1.00         0.440000  
+
+Info    : Mapping. [SYNTH-4]
+        : Mapping 'uart' using 'high' effort.
+Mapper: Libraries have:
+	domain _default_: 344 combo usable cells and 147 sequential usable cells
+      Mapping 'uart'...
+        Preparing the circuit
+          Pruning unused logic
+Multi-threaded constant propagation [1|0] ...
+Info    : A datapath component has been ungrouped. [GB-6]
+        : The instance 'add_200_30' of datapath component 'add_unsigned_56'.
+Info    : A datapath component has been ungrouped. [GB-6]
+        : The instance 'inc_add_354_32' of datapath component 'increment_unsigned_1'.
+Info    : A datapath component has been ungrouped. [GB-6]
+        : The instance 'inc_add_217_34' of datapath component 'increment_unsigned_1'.
+Info    : A datapath component has been ungrouped. [GB-6]
+        : The instance 'inc_add_229_33' of datapath component 'increment_unsigned_1'.
+Info    : A datapath component has been ungrouped. [GB-6]
+        : The instance 'inc_add_149_21' of datapath component 'increment_unsigned_1'.
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'sender' in module 'uart' would be automatically ungrouped.
+        : Hierarchical instances can be automatically ungrouped to allow for better area or timing optimization. You can control auto ungrouping using the root-level attribute 'auto_ungroup'. You can skip individual instances or modules using the attribute 'ungroup_ok'.
+          There are 1 hierarchical instances automatically ungrouped.
+          Analyzing hierarchical boundaries
+          Propagating constants
+        Done preparing the circuit
+          Structuring (delay-based) uart...
+          Done structuring (delay-based) uart
+Multi-threaded Virtual Mapping    (8 threads, 8 of 8 CPUs usable)
+          Structuring (delay-based) logic partition in uart_rx...
+          Done structuring (delay-based) logic partition in uart_rx
+        Mapping logic partition in uart_rx...
+          Structuring (delay-based) logic partition in uart...
+            Starting partial collapsing (xors only) cb_oseq_116
+            Finished partial collapsing.
+            Starting partial collapsing  cb_oseq_116
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in uart
+        Mapping logic partition in uart...
+          Structuring (delay-based) logic partition in uart...
+            Starting partial collapsing (xors only) cb_seq_115
+            Finished partial collapsing.
+            Starting partial collapsing  cb_seq_115
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in uart
+        Mapping logic partition in uart...
+          Structuring (delay-based) logic partition in uart_rx...
+            Starting partial collapsing (xors only) cb_seq
+            Finished partial collapsing.
+            Starting partial collapsing  cb_seq
+            Finished partial collapsing.
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+            Starting redundancy-removal...
+            Finished redundancy-removal...
+          Done structuring (delay-based) logic partition in uart_rx
+        Mapping logic partition in uart_rx...
+ 
+Global mapping target info
+==========================
+Cost Group 'clk' target slack:  8136 ps
+Target path end-point (Pin: recver/clk1x_reg/d)
+
+            Pin                         Type          Fanout Load Arrival   
+                                                             (fF)   (ps)    
+----------------------------------------------------------------------------
+(clock clk)                   <<<  launch                               0 R 
+recver
+  cb_seqi
+    sampling_place_reg[1]/clk                                               
+    sampling_place_reg[1]/q   (u)  unmapped_d_flop         3 25.8           
+    g1982/in_1                                                              
+    g1982/z                   (u)  unmapped_nand2          3 25.2           
+    g2111/in_1                                                              
+    g2111/z                   (u)  unmapped_complex2       2 16.8           
+    g2330/in_0                                                              
+    g2330/z                   (u)  unmapped_or2            1  8.4           
+    g2331/in_1                                                              
+    g2331/z                   (u)  unmapped_nand2          2 17.2           
+    g2311/in_0                                                              
+    g2311/z                   (u)  unmapped_complex2       1  8.4           
+    g2277/in_0                                                              
+    g2277/z                   (u)  unmapped_nand2          1  8.6           
+    g2271/in_1                                                              
+    g2271/z                   (u)  unmapped_or2            1  8.6           
+    g2265/in_0                                                              
+    g2265/z                   (u)  unmapped_or2            1  8.6           
+    g2186/in_0                                                              
+    g2186/z                   (u)  unmapped_or2            1  8.6           
+    g2262/in_1                                                              
+    g2262/z                   (u)  unmapped_nand2          1  8.4           
+    g2386/in_0                                                              
+    g2386/z                   (u)  unmapped_complex2       1  8.6           
+    clk1x_reg/d               <<<  unmapped_d_flop                          
+    clk1x_reg/clk                  setup                                    
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock clk)                        capture                         271267 R 
+----------------------------------------------------------------------------
+Cost Group   : 'clk' (path_group 'clk')
+Start-point  : recver/cb_seqi/sampling_place_reg[1]/clk
+End-point    : recver/cb_seqi/clk1x_reg/d
+
+(u) : Net has unmapped pin(s).
+
+The global mapper estimates a slack for this path of 269484ps.
+ 
+Multi-threaded Technology Mapping (8 threads, 8 of 8 CPUs usable)
+          Restructuring (delay-based) logic partition in uart...
+          Done restructuring (delay-based) logic partition in uart
+        Optimizing logic partition in uart...
+Info    : Sequential phase inversion. [MAP-15]
+        : Instance 'cb_seqi/cnt16x_reg[0]' is mapped with phase inversion. The sequential instance was implemented by inverting the data input and the output, swapping asynchronous preset and clear inputs if present.
+        : Root attribute 'lbr_seq_in_out_phase_opto' enables this optimization. The sequential instance will be implemented by inverting the data input and the output, or moving the inversion from the data input to the output(bubble pushing). In such cases, swapping asynchronous preset and clear inputs will happen(if present). 
+Info    : Sequential phase inversion. [MAP-15]
+        : Instance 'cb_seqi/sender_no_bits_sent_reg[0]' is mapped with phase inversion. The sequential instance was implemented by inverting the data input and the output, swapping asynchronous preset and clear inputs if present.
+          Restructuring (delay-based) logic partition in uart_rx...
+          Done restructuring (delay-based) logic partition in uart_rx
+        Optimizing logic partition in uart_rx...
+Info    : Sequential phase inversion. [MAP-15]
+        : Instance 'recver/cb_seqi/clk1x_reg' is mapped with phase inversion. The sequential instance was implemented by inverting the data input and the output, swapping asynchronous preset and clear inputs if present.
+Info    : Sequential phase inversion. [MAP-15]
+        : Instance 'recver/cb_seqi/r_buffer_reg[5]' is mapped with phase inversion. The sequential instance was implemented by inverting the data input and the output, swapping asynchronous preset and clear inputs if present.
+Info    : Sequential phase inversion. [MAP-15]
+        : Instance 'recver/cb_seqi/r_buffer_reg[4]' is mapped with phase inversion. The sequential instance was implemented by inverting the data input and the output, swapping asynchronous preset and clear inputs if present.
+Info    : Sequential phase inversion. [MAP-15]
+        : Instance 'recver/cb_seqi/sampling_place_reg[3]' is mapped with phase inversion. The sequential instance was implemented by inverting the data input and the output, swapping asynchronous preset and clear inputs if present.
+Info    : Sequential phase inversion. [MAP-15]
+        : Instance 'recver/cb_seqi/frame_error_reg' is mapped with phase inversion. The sequential instance was implemented by inverting the data input and the output, swapping asynchronous preset and clear inputs if present.
+          Restructuring (delay-based) logic partition in uart...
+          Done restructuring (delay-based) logic partition in uart
+        Optimizing logic partition in uart...
+          Restructuring (delay-based) logic partition in uart_rx...
+          Done restructuring (delay-based) logic partition in uart_rx
+        Optimizing logic partition in uart_rx...
+ 
+Global mapping timing result
+============================
+        Computing net loads.
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+       Pin                 Type        Fanout  Load Slew Delay Arrival   
+                                               (fF) (ps)  (ps)   (ps)    
+-------------------------------------------------------------------------
+(clock clk)             launch                                       0 R 
+cb_seqi
+  cnt16x_reg[1]/CP                                     0             0 R 
+  cnt16x_reg[1]/Q       DFCNQD2BWP7T        4 347.1  934  +784     784 R 
+cb_seqi/cnt16x[1] 
+recver/cnt16x[1] 
+  cb_seqi/cnt16x[1] 
+    g2891/A1                                                +0     784   
+    g2891/ZN            XNR2D1BWP7T         3  18.5  134  +375    1159 R 
+    g2821/B1                                                +0    1159   
+    g2821/ZN            MAOI22D0BWP7T       1   7.9  262  +236    1395 R 
+    g2818/A2                                                +0    1395   
+    g2818/ZN            ND4D0BWP7T          1  10.1  200  +156    1551 F 
+    g2816/B                                                 +0    1551   
+    g2816/ZN            OAI211D1BWP7T       1   9.6  193  +129    1680 R 
+    clk1x_reg/D    <<<  DFSND1BWP7T                         +0    1680   
+    clk1x_reg/CP        setup                          0   +73    1753 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock clk)             capture                                 271267 R 
+-------------------------------------------------------------------------
+Cost Group   : 'clk' (path_group 'clk')
+Timing slack :  269514ps 
+Start-point  : cb_seqi/cnt16x_reg[1]/CP
+End-point    : recver/cb_seqi/clk1x_reg/D
+
+ 
+ 
+Global mapping status
+=====================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_map                 7046        0 
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+           clk              8136   269514            271267 
+
+ 
+Global incremental target info
+==============================
+Cost Group 'clk' target slack:  5424 ps
+Target path end-point (Pin: recver/clk1x_reg/D (DFSND1BWP7T/D))
+
+       Pin                 Type        Fanout  Load Arrival   
+                                               (fF)   (ps)    
+--------------------------------------------------------------
+(clock clk)        <<<  launch                            0 R 
+cb_seqi
+  cnt16x_reg[1]/CP                                            
+  cnt16x_reg[1]/Q       DFCNQD2BWP7T        4 347.1           
+cb_seqi/cnt16x[1] 
+recver/cnt16x[1] 
+  cb_seqi/cnt16x[1] 
+    g2891/A1                                                  
+    g2891/ZN            XNR2D1BWP7T         3  18.5           
+    g2821/B1                                                  
+    g2821/ZN            MAOI22D0BWP7T       1   7.9           
+    g2818/A2                                                  
+    g2818/ZN            ND4D0BWP7T          1  10.1           
+    g2816/B                                                   
+    g2816/ZN            OAI211D1BWP7T       1   9.6           
+    clk1x_reg/D    <<<  DFSND1BWP7T                           
+    clk1x_reg/CP        setup                                 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
+(clock clk)             capture                      271267 R 
+--------------------------------------------------------------
+Cost Group   : 'clk' (path_group 'clk')
+Start-point  : cb_seqi/cnt16x_reg[1]/CP
+End-point    : recver/cb_seqi/clk1x_reg/D
+
+The global mapper estimates a slack for this path of 268685ps.
+ 
+ 
+Global incremental timing result
+================================
+        Computing net loads.
+        Tracing clock networks.
+        Levelizing the circuit.
+        Computing delays.
+        Computing arrivals and requireds.
+       Pin                 Type        Fanout  Load Slew Delay Arrival   
+                                               (fF) (ps)  (ps)   (ps)    
+-------------------------------------------------------------------------
+(clock clk)             launch                                       0 R 
+cb_seqi
+  cnt16x_reg[1]/CP                                     0             0 R 
+  cnt16x_reg[1]/Q       DFCNQD2BWP7T        4 351.5  945  +790     790 R 
+cb_seqi/cnt16x[1] 
+recver/cnt16x[1] 
+  cb_seqi/cnt16x[1] 
+    g2891/A1                                                +0     790   
+    g2891/ZN            XNR2D1BWP7T         3  18.5  134  +376    1167 R 
+    g2821/B1                                                +0    1167   
+    g2821/ZN            MAOI22D0BWP7T       1   7.9  262  +236    1403 R 
+    g2818/A2                                                +0    1403   
+    g2818/ZN            ND4D0BWP7T          1  10.1  200  +156    1559 F 
+    g2816/B                                                 +0    1559   
+    g2816/ZN            OAI211D1BWP7T       1   9.6  193  +129    1688 R 
+    clk1x_reg/D    <<<  DFSND1BWP7T                         +0    1688   
+    clk1x_reg/CP        setup                          0   +73    1761 R 
+- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+(clock clk)             capture                                 271267 R 
+-------------------------------------------------------------------------
+Cost Group   : 'clk' (path_group 'clk')
+Timing slack :  269506ps 
+Start-point  : cb_seqi/cnt16x_reg[1]/CP
+End-point    : recver/cb_seqi/clk1x_reg/D
+
+ 
+ 
+Global incremental optimization status
+======================================
+                                   Group   
+                                  Tot Wrst 
+                           Total  Weighted 
+Operation                   Area   Slacks  
+-------------------------------------------------------------------------------
+ global_incr                6975        0 
+
+    Cost Group            Target    Slack    Diff.  Constr.
+-----------------------------------------------------------
+           clk              5424   269506            271267 
+
+
+Scan mapping status report
+==========================
+    Scan mapping: converting flip-flops that pass TDRC.
+    Scan mapping: bypassed.  You have to either 1) set attribute 'dft_scan_map_mode' to 'tdrc_pass' and run 'check_dft_rules' or 2) set attribute 'dft_scan_map_mode' to 'force_all'.
+
+    Scan mapping bypassed because no TDRC data is available: either command 'check_dft_rules' has not been run or TDRC data has been subsequently invalidated.
+          Performing post-mapping optimization ...
+
+Info    : Hierarchical instance automatically ungrouped. [GLO-51]
+        : Instance 'recver' in module 'uart' would be automatically ungrouped.
+          There are 1 hierarchical instances automatically ungrouped.
+Info    : Done mapping. [SYNTH-5]
+        : Done mapping 'uart'.
+        Computing net loads.
+     flow.cputime  flow.realtime  timing.setup.tns  timing.setup.wns  snapshot
+UM:             4              6                                      syn_map
+@file(comandos_genus.txt) 24: write_design -innovus -base_name innovus/design
+Warning : Attribute design_process_node is not set for this design. [PHYS-1011]
+        : Missing data.
+        : When attribute design_process_node is not set to an appropriate integer value >=5 and <=250, then Innovus will assume its own default value for the design process node.
+Exporting design data for 'uart' to innovus/design...
+Info    : Generating design database. [PHYS-90]
+        : Writing netlist: innovus/design.v
+        : The database contains all the files required to restore the design in the specified application.
+Info    : Generating design database. [PHYS-90]
+        : Writing Metrics file: innovus/design.metrics.json
+Info    : Generating design database. [PHYS-90]
+        : Writing write_script: innovus/design.g
+Info    : Generating design database. [PHYS-90]
+        : Writing multi-mode multi-corner file: innovus/design.mmmc.tcl
+No loop breaker instances found (cdn_loop_breaker).
+Finished SDC export (command execution time mm:ss (real) = 00:00).
+Info: file innovus//design.default_emulate_constraint_mode.sdc has been written
+File innovus//design.mmmc.tcl has been written.
+Info    : Design has no library or power domains. [INVS_MSV-301]
+        : No power domains will be created for Innovus.
+Info    : Generating design database. [PHYS-90]
+        : Writing Innovus mode: innovus/design.mode
+Info    : Generating design database. [PHYS-90]
+        : Writing INIT setup file for Genus: innovus/design.genus_init.tcl
+Info    : Generating design database. [PHYS-90]
+        : Writing INIT setup file for Innovus: innovus/design.invs_init.tcl
+Info    : Generating design database. [PHYS-90]
+        : Writing Innovus setup file: innovus/design.invs_setup.tcl
+Info    : Generating design database. [PHYS-90]
+        : Writing Genus(TM) Synthesis Solution setup file: innovus/design.genus_setup.tcl
+** To load the database source innovus/design.invs_setup.tcl in an Innovus session.
+** To load the database source innovus/design.genus_setup.tcl in an Genus(TM) Synthesis Solution session.
+Finished exporting design data for 'uart' (command execution time mm:ss cpu = 00:01, real = 00:01).
+.
+#@ End verbose source comandos_genus.txt
+WARNING: This version of the tool is 1029 days old.
+no gcells found!
+@genus:root: 2> 
+@genus:root: 2> 
+@genus:root: 2> 
+
+Another Ctrl-C within 1 second will terminate the tool.
+@genus:root: 2> 
+@genus:root: 2> 
+@genus:root: 2> exit
+Normal exit.
