@@ -1,0 +1,26 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-RUNMODE
+-sv
+-DEFINE
+NUMBER_OF_TRANSACTIONS=200
+-I_INCDIR
+/home/tools/XC/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/home/tools/XC/tools/methodology/UVM/CDNS-1.1d/additions/sv
+-UPDATE
+-CDSLIB
+./xcelium.d/run.lnx8664.18.03.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.18.03.d/hdlrun.var
+-work
+worklib
+-UVMNOSINGLESTEP
+-define
+UVM_PLI
+/home/tools/XC/tools/methodology/UVM/CDNS-1.1d/sv/src/uvm_pkg.sv
+/home/tools/XC/tools/methodology/UVM/CDNS-1.1d/additions/sv/cdns_uvm_pkg.sv

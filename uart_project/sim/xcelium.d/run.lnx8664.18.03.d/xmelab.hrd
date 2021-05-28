@@ -1,0 +1,12 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+
+testbench
+-ACCESS
++rwc
+-NOTIMINGCHECKS
+-DISABLE_SEM2009
+-timescale
+1ns/1ps

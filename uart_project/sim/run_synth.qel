@@ -1,0 +1,4 @@
+database -open waves_synth -event
+probe -create testbench -depth all
+run 
+exit

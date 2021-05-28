@@ -1,0 +1,6 @@
+define XMSIMRC	( /home/tools/XC/tools/xcelium/files/xmsimrc, ~/.xmsimrc )
+include ./hdlrun.var
+define SNAPSHOT worklib.AN2D0BWP7T:v
+DEFINE RUNMODEDEFAULT 1
+DEFINE LIB_MAP (  => worklib )
+DEFINE LIB_MAP ($LIB_MAP, + => worklib )

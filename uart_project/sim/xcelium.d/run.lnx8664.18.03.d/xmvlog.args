@@ -1,0 +1,37 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
+-XLMODE
+./xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-UVMNOSINGLESTEP
+-define
+UVM_PLI
+-sv
+-INCDIR
+../
+-DEFINE
+NUMBER_OF_TRANSACTIONS=200
+../uart_test_pkg.sv
+../interfaces.sv
+/home/tools/TSMC180/TSMCHOME/digital/Front_End/verilog/tcb018gbwp7t_270a/tcb018gbwp7t.v
+../synthesis_3/innovus/design.v
+../testbench_synth.sv
+-CDSLIB
+./xcelium.d/run.lnx8664.18.03.d/cdsrun.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.18.03.d/hdlrun.var
+-I_INCDIR
+/home/tools/XC/tools/methodology/UVM/CDNS-1.1d/sv/src
+-DEFINE
+USE_PARAMETERIZED_WRAPPER
+-I_INCDIR
+/home/tools/XC/tools/methodology/UVM/CDNS-1.1d/additions/sv
+-MESSAGES
+-UPDATE
+-XLLIBSTORE
+./xcelium.d/run.lnx8664.18.03.d/xllibs
+-ALLOWUNBOUND
+-hastop
+-ENABLEOIGW

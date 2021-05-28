@@ -1,0 +1,4 @@
+database -open waves
+probe -create testbench -depth all
+run 
+exit

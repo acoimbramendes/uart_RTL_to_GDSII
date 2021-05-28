@@ -1,0 +1,27 @@
+//
+// File created by:  xrun
+// Do not modify this file
+//
++incdir+../
++define+NUMBER_OF_TRANSACTIONS=200
+-loadpli
+/home/tools/XC/tools/methodology/UVM/CDNS-1.1d/additions/sv/lib/64bit/libuvmpli.so:uvm_pli_boot
+-ACCESS
++rwc
+-NOTIMINGCHECKS
+-DISABLE_SEM2009
+-timescale
+1ns/1ps
+-MESSAGES
+testbench
+-XLMODE
+./xcelium.d/run.lnx8664.18.03.d
+-RUNMODE
+-CDSLIB
+./xcelium.d/run.lnx8664.18.03.d/cds.lib
+-HDLVAR
+./xcelium.d/run.lnx8664.18.03.d/hdl.var
+-WORK
+worklib
+-IRUNHASTOP
+-HASXLMODE

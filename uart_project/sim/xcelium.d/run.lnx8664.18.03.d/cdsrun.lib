@@ -1,0 +1,2 @@
+SOFTINCLUDE /home/tools/XC/tools/inca/files/cds.lib
+define worklib ../worklib
